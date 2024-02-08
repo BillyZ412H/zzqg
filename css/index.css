@@ -1,0 +1,351 @@
+.banner {
+  height: 350px;
+  background: #1a75fc;
+}
+.banner .warp-container {
+  height: 100%;
+  position: relative;
+  text-align: center;
+}
+.banner .img-thumbnail {
+  height: 100%;
+  vertical-align: middle;
+}
+.part {
+  margin-top: 60px;
+}
+.part h2 {
+  text-align: center;
+  font-size: 28px;
+  margin-top: 0;
+  margin-bottom: 30px;
+  color: #1a75fc;
+}
+.part h2 span {
+  display: inline-block;
+  background: linear-gradient(#1a75fc, #1a75fc) left top, linear-gradient(#1a75fc, #1a75fc) left top, linear-gradient(#1a75fc, #1a75fc) right bottom, linear-gradient(#1a75fc, #1a75fc) right bottom;
+  background-repeat: no-repeat;
+  background-size: 2px 24px, 24px 2px;
+  padding: 8px 50px;
+}
+.part .text-justify {
+  text-align: justify;
+  text-indent: 2em;
+  color: #333;
+  font-size: 18px;
+}
+.make .list-group {
+  margin: -15px;
+  padding: 0;
+  list-style: none;
+  display: flex;
+  flex-wrap: wrap;
+}
+.make .list-group .list-group-item {
+  padding: 15px;
+  flex: 1;
+}
+.make .list-group .list-group-item a {
+  text-decoration: none;
+}
+.make .list-group .list-group-item:hover .thumbnail {
+  transform: translate(0px, -10px);
+  box-shadow: 0px 3px 8px #0000003d;
+}
+.make .list-group .list-group-item .thumbnail {
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  padding: 4px;
+  transition: all 0.3s;
+}
+.make .list-group .list-group-item .thumbnail img {
+  width: 100%;
+}
+.make .list-group .list-group-item .thumbnail p {
+  text-align: center;
+  color: #333;
+}
+.representation .container-inner {
+  overflow: hidden;
+}
+.representation .list-group {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+  display: flex;
+  animation: ec-marquee-move 25s infinite linear;
+}
+.representation .list-group:hover {
+  animation-play-state: paused;
+}
+.representation .list-group .list-group-item {
+  padding: 5px;
+}
+.representation .list-group .thumbnail {
+  width: 400px;
+  position: relative;
+  height: 265px;
+  display: flex;
+  align-items: center;
+  background: #000;
+  overflow: hidden;
+}
+.representation .list-group .thumbnail img {
+  width: 100%;
+  display: block;
+}
+.representation .list-group .thumbnail p {
+  position: absolute;
+  z-index: 1;
+  bottom: 0;
+  margin: 0;
+  width: 100%;
+  text-align: center;
+  background-image: linear-gradient(0deg, #333, #0000002e);
+  line-height: 40px;
+  color: #fff;
+}
+@keyframes ec-marquee-move {
+  0% {
+    transform: translateX(0px);
+  }
+  100% {
+    transform: translateX(-4100px);
+  }
+}
+.youshang .list-group {
+  padding: 0;
+  list-style: none;
+  display: flex;
+  margin: -10px;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+.youshang .list-group .list-group-item {
+  padding: 10px;
+}
+.youshang .list-group .list-group-item:hover .thumbnail {
+  transform: translate(0px, -10px);
+  box-shadow: 0px 3px 8px #0000003d;
+}
+.youshang .list-group .thumbnail {
+  position: relative;
+  background: #fff;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  padding: 4px;
+  transition: all 0.3s;
+  height: 140px;
+  width: 140px;
+  display: flex;
+  align-items: center;
+}
+.youshang .list-group .thumbnail img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+.bottom {
+  height: 30px;
+}
+@media screen and (max-width: 575px) {
+  .banner {
+    height: 100px;
+  }
+  .part {
+    margin-top: 20px;
+    padding: 0 10px;
+  }
+  .part h2 {
+    font-size: 16px;
+    margin-bottom: 10px;
+  }
+  .part h2 span {
+    background-size: 1px 10px, 10px 1px;
+    padding: 5px 20px;
+  }
+  .part .text-justify {
+    font-size: 12px;
+  }
+  .make .list-group {
+    margin: -5px;
+  }
+  .make .list-group .list-group-item {
+    padding: 5px;
+    flex: auto;
+  }
+  .make .list-group .list-group-item p {
+    font-size: 12px;
+    margin: 6px 0;
+  }
+  .representation .list-group {
+    animation: ec-marquee-move 15s infinite linear;
+  }
+  .representation .list-group .thumbnail {
+    width: 150px;
+    height: 96px;
+  }
+  .representation .list-group .thumbnail p {
+    font-size: 12px;
+    line-height: 30px;
+  }
+  @keyframes ec-marquee-move {
+    0% {
+      transform: translateX(0px);
+    }
+    100% {
+      transform: translateX(-1600px);
+    }
+  }
+  .youshang .list-group {
+    margin: -5px;
+  }
+  .youshang .list-group .list-group-item {
+    padding: 5px;
+  }
+  .youshang .list-group .thumbnail {
+    width: 50px;
+    height: 50px;
+  }
+}
+@media screen and (min-width: 576px) and (max-width: 767px) {
+  .banner {
+    height: 180px;
+  }
+  .part {
+    margin-top: 30px;
+  }
+  .part h2 {
+    font-size: 18px;
+    margin-bottom: 15px;
+  }
+  .part h2 span {
+    background-size: 2px 14px, 14px 2px;
+    padding: 8px 30px;
+  }
+  .part .text-justify {
+    font-size: 14px;
+  }
+  .make .list-group {
+    margin: -5px;
+  }
+  .make .list-group .list-group-item {
+    padding: 5px;
+    flex: auto;
+  }
+  .make .list-group .list-group-item p {
+    font-size: 14px;
+    margin: 10px 0;
+  }
+  .representation .list-group {
+    animation: ec-marquee-move 20s infinite linear;
+  }
+  .representation .list-group .thumbnail {
+    width: 250px;
+    height: 160px;
+  }
+  .representation .list-group .thumbnail p {
+    font-size: 12px;
+    line-height: 30px;
+  }
+  @keyframes ec-marquee-move {
+    0% {
+      transform: translateX(0px);
+    }
+    100% {
+      transform: translateX(-2600px);
+    }
+  }
+  .youshang .list-group {
+    margin: -5px;
+  }
+  .youshang .list-group .list-group-item {
+    padding: 5px;
+  }
+  .youshang .list-group .thumbnail {
+    width: 80px;
+    height: 80px;
+  }
+}
+@media screen and (min-width: 768px) and (max-width: 991px) {
+  .banner {
+    height: 240px;
+  }
+  .part {
+    margin-top: 50px;
+  }
+  .part h2 {
+    font-size: 20px;
+    margin-bottom: 20px;
+  }
+  .part h2 span {
+    background-size: 2px 18px, 18px 2px;
+    padding: 8px 40px;
+  }
+  .part .text-justify {
+    font-size: 14px;
+  }
+  .make .list-group {
+    margin: -5px;
+  }
+  .make .list-group .list-group-item {
+    padding: 5px;
+    flex: 0 0 50%;
+  }
+  .make .list-group .list-group-item p {
+    font-size: 14px;
+    margin: 10px 0;
+  }
+  .representation .list-group .thumbnail {
+    width: 320px;
+    height: 205px;
+  }
+  @keyframes ec-marquee-move {
+    0% {
+      transform: translateX(0px);
+    }
+    100% {
+      transform: translateX(-3300px);
+    }
+  }
+  .youshang .list-group {
+    margin: -5px;
+  }
+  .youshang .list-group .list-group-item {
+    padding: 5px;
+  }
+  .youshang .list-group .thumbnail {
+    width: 100px;
+    height: 100px;
+  }
+}
+@media screen and (min-width: 992px) and (max-width: 1199px) {
+  .banner {
+    height: 320px;
+  }
+  .part {
+    margin-top: 40px;
+  }
+  .part h2 {
+    font-size: 24px;
+    margin-bottom: 25px;
+  }
+  .part .text-justify {
+    font-size: 16px;
+  }
+  .representation .list-group .thumbnail {
+    width: 400px;
+  }
+  .make .list-group .list-group-item {
+    flex: 0 0 50%;
+  }
+  .make .list-group .list-group-item p {
+    font-size: 16px;
+  }
+  .youshang .list-group .thumbnail {
+    width: 120px;
+    height: 120px;
+  }
+}
+@media screen and (min-width: 1200px) and (max-width: 1400px) {
+}

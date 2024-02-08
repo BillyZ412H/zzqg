@@ -1,0 +1,38 @@
+.warp-container {
+  width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+  overflow: hidden;
+}
+@media (min-width: 576px) {
+  .warp-container {
+    max-width: 540px;
+  }
+}
+@media (min-width: 768px) {
+  .warp-container {
+    max-width: 720px;
+  }
+}
+@media (min-width: 992px) {
+  .warp-container {
+    max-width: 960px;
+  }
+}
+@media (min-width: 1200px) {
+  .warp-container {
+    max-width: 1140px;
+  }
+}
+@media (min-width: 1400px) {
+  .warp-container {
+    max-width: 1320px;
+  }
+}
+@font-face {
+  font-family: customFont;
+  src: url(font-family/font-black.ttf);
+}
+* {
+  box-sizing: border-box;
+}

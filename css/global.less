@@ -1,0 +1,32 @@
+
+@import "variables.less";
+
+.warp-container {
+  @media (min-width: @screen-sm-breakpoints) {
+    max-width: @screen-sm-width;
+  }
+  @media (min-width: @screen-md-breakpoints) {
+    max-width: @screen-md-width;
+  }
+  @media (min-width: @screen-lg-breakpoints) {
+    max-width: @screen-lg-width;
+  }
+  @media (min-width: @screen-xl-breakpoints) {
+    max-width: @screen-xl-width;
+  }
+  @media (min-width: @screen-xxl-breakpoints) {
+    max-width: @screen-xxl-width;
+  }
+  width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+  overflow: hidden;
+}
+@font-face {
+  font-family: customFont;
+  src: url(./font-family/font-black.ttf)
+  
+}
+* {
+  box-sizing: border-box;
+}

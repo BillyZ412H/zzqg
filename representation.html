@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>中国智造十大代表性技术或产品</title>
+  <link rel="stylesheet" href="./css/normalize.css">
+  <link rel="stylesheet" href="./css/global.css">
+  <link rel="stylesheet" href="./css/details.css">
+</head>
+<body>
+  <header class="page-header">
+    <a class="back" id="fh" href=javascript:void(0);></a>
+  </header>
+  <div style="height: 48px;"></div>
+  <main class="warp-container" id="main-body">
+    <!-- <h2 class="title">铁路技术</h2>
+    <p style="text-align: center; text-indent: inherit;">
+      <img src="./../images/representation/1.jpg" alt="">
+    </p>
+    <p>我国已系统掌握了各种复杂地质及气候条件下高铁建造成套技术，全方位掌握了时速200-250公里、300-350公里动车组制造技术，并开发了适应复杂路网条件下长距离运行的高铁运营管理成套技术，构建了涵盖不同速度等级、成熟完备的高铁技术体系。特别是自主研制的复兴号动车组，成功实现时速350公里商业运营，树立起了世界高铁建设运营的新标杆。另外中国国家铁路集团负责人介绍说，中国重载铁路、高原高寒铁路技术亦处于世界领先水平，其中重点领域领跑全球。</p> -->
+  </main>
+  <script src="./representation.js"></script>
+  <script src="./js/db1.js"></script>
+  <script>
+    (function() {
+      function getUrlParams(url){
+        var pattern = /(\w+|[\u4e00-\u9fa5]+)=(\w+|[\u4e00-\u9fa5]+)/ig;
+        var result = {};
+        url.replace(pattern, ($, $1, $2)=>{
+          result[$1] = $2;
+        })
+        return result
+      }
+      var params = getUrlParams(window.location.href)
+      var data = repreData[params.id] || {}
+      var mainDom = document.getElementById('main-body')
+      var h2 = document.createElement('h2')
+      mainDom.appendChild(h2)
+      h2.className = 'title'
+      h2.innerHTML = data.title
+      var p = document.createElement('p')
+      var img = document.createElement('img')
+      p.style = 'text-align: center; text-indent: inherit;'
+      img.src = data.image
+      p.appendChild(img)
+      mainDom.appendChild(p)
+      var text = document.createElement('p')
+      text.innerHTML = data.description
+      mainDom.appendChild(text)
+    })();
+  </script>
+</body>
+</html>
